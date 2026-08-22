@@ -4,5 +4,4 @@ numpy>=1.26,<3
 requests>=2.31,<3
 pyyaml>=6.0,<7
 plotly>=5.24,<7
-
 pytest>=8,<10
