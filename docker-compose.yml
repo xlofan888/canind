@@ -1,0 +1,9 @@
+services:
+  canind:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      CANIND_DB_PATH: /app/data/canind.sqlite3
+    volumes:
+      - ./data:/app/data

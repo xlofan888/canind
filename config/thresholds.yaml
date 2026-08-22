@@ -1,0 +1,65 @@
+recession:
+  unemployment:
+    points:
+      - [5.5, 0]
+      - [6.0, 25]
+      - [6.5, 50]
+      - [7.0, 75]
+      - [7.5, 100]
+
+  real_gdp:
+    points:
+      - [2.0, 0]
+      - [1.0, 20]
+      - [0.0, 50]
+      - [-1.0, 75]
+      - [-2.0, 100]
+
+  pmi_composite:
+    points:
+      - [52, 0]
+      - [50, 30]
+      - [48, 60]
+      - [46, 80]
+      - [45, 100]
+
+  job_vacancies:
+    points:
+      - [2.0, 0]
+      - [0.0, 25]
+      - [-2.0, 50]
+      - [-5.0, 75]
+      - [-10.0, 100]
+
+  retail_sales:
+    points:
+      - [3.0, 0]
+      - [1.0, 25]
+      - [0.0, 50]
+      - [-1.0, 75]
+      - [-3.0, 100]
+
+  housing_starts:
+    points:
+      - [5.0, 0]
+      - [0.0, 25]
+      - [-5.0, 50]
+      - [-10.0, 75]
+      - [-20.0, 100]
+
+  core_cpi:
+    points:
+      - [2.0, 0]
+      - [2.5, 25]
+      - [3.0, 50]
+      - [3.5, 75]
+      - [4.0, 100]
+
+transition:
+  weights:
+    non_us_exports: 0.25
+    us_dependency: 0.20
+    business_investment: 0.20
+    infrastructure: 0.15
+    productivity: 0.10
+    fdi: 0.10

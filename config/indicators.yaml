@@ -1,0 +1,99 @@
+indicators:
+  - id: real_gdp
+    name: Real GDP
+    category: Recession
+    frequency: monthly
+    unit: percent
+    weight: 0.20
+    direction: lower_bad
+    status: active
+
+  - id: unemployment
+    name: Unemployment Rate
+    category: Recession
+    frequency: monthly
+    unit: percent
+    weight: 0.20
+    direction: higher_bad
+    status: active
+
+  - id: job_vacancies
+    name: Job Vacancies
+    category: Labour
+    frequency: monthly
+    unit: index
+    weight: 0.10
+    direction: lower_bad
+    status: active
+
+  - id: pmi_composite
+    name: Composite PMI
+    category: Business
+    frequency: monthly
+    unit: index
+    weight: 0.15
+    direction: lower_bad
+    status: demo
+
+  - id: us_exports
+    name: Exports to United States
+    category: Trade
+    frequency: monthly
+    unit: percent
+    weight: 0.00
+    direction: lower_bad
+    status: active
+
+  - id: non_us_exports
+    name: Exports to Non-US Markets
+    category: Trade
+    frequency: monthly
+    unit: percent
+    weight: 0.00
+    direction: higher_good
+    status: active
+
+  - id: business_investment
+    name: Business Investment
+    category: Investment
+    frequency: quarterly
+    unit: percent
+    weight: 0.15
+    direction: lower_bad
+    status: demo
+
+  - id: retail_sales
+    name: Retail Sales
+    category: Consumption
+    frequency: monthly
+    unit: percent
+    weight: 0.10
+    direction: lower_bad
+    status: active
+
+  - id: housing_starts
+    name: Housing Starts
+    category: Housing
+    frequency: monthly
+    unit: percent
+    weight: 0.05
+    direction: lower_bad
+    status: active
+
+  - id: core_cpi
+    name: Core CPI
+    category: Inflation
+    frequency: monthly
+    unit: percent
+    weight: 0.05
+    direction: higher_bad
+    status: active
+
+  - id: cad_usd
+    name: CAD per USD
+    category: Financial
+    frequency: daily
+    unit: rate
+    weight: 0.00
+    direction: higher_bad
+    status: active
