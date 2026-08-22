@@ -27,6 +27,8 @@ def demo_frame():
                 "value": vals[i],
                 "unit": "percent" if k not in ("pmi_composite",) else "index",
                 "source": "DEMO",
-                "vintage_id": "demo-v0.1",
+                "vintage_id": "demo-v0.2",
+                "data_status": "DEMO",
+                "source_url": "",
             })
     return pd.DataFrame(rows)
