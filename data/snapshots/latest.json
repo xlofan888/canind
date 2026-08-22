@@ -1,10 +1,18 @@
 {
-  "updated_at": "2026-08-22T22:03:30.690445+00:00",
-  "mode": "HYBRID",
+  "updated_at": "2026-08-22T22:16:13.988407+00:00",
+  "mode": "DEMO",
   "scores": {
     "recession_risk": 36.882352941176464,
     "transition_score": 66.66666666666667,
     "momentum_score": 20.0,
     "breadth_score": 30.0
-  }
+  },
+  "data_status": {
+    "LIVE": 0,
+    "CACHED": 0,
+    "DEMO": 200,
+    "UNKNOWN": 0,
+    "total": 200
+  },
+  "mapping_errors": []
 }

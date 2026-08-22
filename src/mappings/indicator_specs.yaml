@@ -1,0 +1,68 @@
+# Production mappings are dimension-based. Candidate labels are explicit so schema changes fail loudly.
+real_gdp:
+  source: statcan
+  product_id: 36100434
+  unit: dollars
+  transform: latest
+  filters:
+    GEO: Canada
+  optional: true
+unemployment:
+  source: statcan
+  product_id: 14100287
+  unit: percent
+  transform: latest
+  filters:
+    GEO: Canada
+    Labour force characteristics: [Unemployment rate, Unemployment rate, 15 years and over]
+    Sex: [Total, Total, sex of person]
+  optional: true
+job_vacancies:
+  source: statcan
+  product_id: 14100327
+  unit: number
+  transform: latest
+  filters:
+    GEO: Canada
+  optional: true
+trade_total:
+  source: statcan
+  product_id: 12100011
+  unit: dollars
+  transform: latest
+  filters:
+    GEO: Canada
+  optional: true
+retail_sales:
+  source: statcan
+  product_id: 20100008
+  unit: dollars
+  transform: latest
+  filters:
+    GEO: Canada
+  optional: true
+business_investment:
+  source: statcan
+  product_id: 36100497
+  unit: dollars
+  transform: latest
+  filters:
+    GEO: Canada
+  optional: true
+cpi:
+  source: statcan
+  product_id: 18100004
+  unit: index
+  transform: latest
+  filters:
+    GEO: Canada
+    Products and product groups: [All-items, All-items Consumer Price Index]
+  optional: true
+building_permits:
+  source: statcan
+  product_id: 34100011
+  unit: dollars
+  transform: latest
+  filters:
+    GEO: Canada
+  optional: true
